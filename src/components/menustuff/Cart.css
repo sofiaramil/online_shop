@@ -1,0 +1,18 @@
+.shopcardInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+.seeMore {
+  color: var(--fontColor);
+  font-size: 20px;
+  cursor: pointer;
+  background-color: var(--borderColor);
+  width: 170px;
+  outline: none;
+  border: none;
+  border-radius: 10px 10px 0 0;
+}
+.seeMore:hover {
+  background-color: var(--hoverColor);
+}

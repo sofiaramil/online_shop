@@ -1,0 +1,126 @@
+.SearchThings {
+  position: relative;
+  display: flex;
+  margin: 25px auto;
+}
+h1 {
+  padding-left: 2%;
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+#Searching {
+  width: 100%;
+  height: 30px;
+  color: #6B99C3;
+}
+
+#searchButton {
+  position: absolute;
+  color: white;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+}
+#searchButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.GridHolderForSelling {
+  border: 5px solid black;
+  box-shadow: inset 0 0 2em 0 #022E66;
+  text-align: center;
+}
+.GridHolderForVeshi {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.GridHolderForVeshi div:hover {
+  box-shadow: inset 0 0 1em 0 #022E66;
+}
+
+.GridVeshi {
+  border: 5px solid white;
+  text-align: center;
+  margin: 7%;
+}
+.GridVeshi img,
+.GridVeshiSections img {
+  width: 90%;
+}
+
+.btnScroll {
+  background-color: var(--mainColor);
+  height: 90px;
+  width: 90px;
+  top: 120px;
+  position: sticky;
+  font-size: 30px;
+  border: 2px solid var(--borderColor);
+  border-radius: 15px;
+}
+.btnScroll:hover {
+  box-shadow: inset 0 0 8px 0 var(--hoverColor);
+}
+.btnScroll::before {
+  content: ">";
+}
+
+#btnLeft {
+  left: 0;
+  transform: rotate(180deg);
+}
+#btnRight {
+  right: 0;
+}
+
+.HolderForSelling {
+  position: relative;
+}
+
+.HolderForVeshi {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.Veshi {
+  border: 2px solid var(--borderColor);
+  padding: 0 14px;
+}
+.Veshi:hover {
+  box-shadow: inset 0 0 1em 0 var(--hoverColor);
+}
+
+.Welcome {
+  background-image: url("../../photos/background.jpg");
+  background-repeat: repeat-x;
+  padding: 40px;
+  font-size: 50px;
+  color: var(--fontColor);
+  -webkit-text-stroke: 2px var(--mainColor);
+}
+
+@media screen and (max-width: 760px) {
+  .GridHolderForVeshi {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+  #SectionsHolderForVeshi {
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+
+  .NextItem {
+    display: none;
+  }
+  .Welcome {
+    font-size: 40px;
+  }
+  .btnScroll {
+    display: none;
+  }
+}
