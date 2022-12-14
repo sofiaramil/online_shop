@@ -1,0 +1,96 @@
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--hoverColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--hoverColor);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+#navbar {
+  background-color: #FAD074;
+  height: 3em;
+  min-width: 100%;
+  position: fixed;
+  z-index: 1;
+  text-align: end;
+}
+
+.HolderForMenu {
+  text-align: end;
+  margin: 1em 10%;
+}
+.HolderForMenuPhone {
+  display: none;
+  width: 10em;
+  text-align: center;
+  background-color: var(--mainColor);
+  box-shadow: inset 0 0 1em 0 var(--hoverColor);
+  margin: 0 10%;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--fontColor);
+  border: none;
+  border-right: 2px solid var(--mainColor);
+  padding: 0 8px;
+  background: none;
+  outline: none;
+}
+
+.nav-links:hover {
+  background-color: var(--hoverColor);
+}
+
+#borger {
+  color: var(--fontColor);
+  background-color: var(--mainColor);
+  font-size: 20px;
+  padding: 7px;
+  display: none;
+  margin: 0 10%;
+  border-radius: 20px;
+}
+
+.profileHolder {
+  position: absolute;
+  border: 5px solid var(--borderColor);
+  right: 0;
+  margin: 5%;
+  margin-top: 1em;
+  text-align: start;
+  width: 10em;
+  padding: 10px;
+  background-color: var(--mainColor);
+  box-shadow: inset 0 0 3em 0 var(--hoverColor);
+  z-index: 1;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 760px) {
+  #borger {
+    display: inline-block;
+  }
+
+  .HolderForMenu {
+    display: none;
+  }
+
+  .HolderForMenuPhone {
+    display: inline-grid;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,27 @@
+
+:root{
+    --mainColor:#191A19;
+    --borderColor: #1E5128;
+    --hoverColor: #2b701e;
+    --fontColor: black;
+    font-family: "Century Gothic", sans-serif;
+}
+
+* {
+  color: var(--fontColor);
+  
+  line-height: 1.5;
+}
+
+body {
+  background-color: white;
+  margin-bottom:0;
+}
+.WholePage{
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-wrap{
+  flex:1;
+}
